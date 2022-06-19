@@ -1,0 +1,25 @@
+<div class="clock">
+  <svg class="circle" viewBox="0 0 120 120" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="60" r="60" />
+    <line x1="60" y1="15" x2="60" y2="60" class="hours"
+    [ngStyle]="{'transform': hour}"/>
+    <line x1="60" y1="15" x2="60" y2="60" class="minutes"
+    [ngStyle]="{'transform': minutes}"/>
+    <line x1="60" y1="15" x2="60" y2="60" class="seconds"
+    [ngStyle]="{'transform': seconds}"/>
+
+    <text x="60" y="15" class="line" #line>12</text>
+    <text x="60" y="15" class="line" #line>1</text>
+    <text x="60" y="15" class="line" #line>2</text>
+    <text x="60" y="15" class="line" #line>3</text>
+    <text x="60" y="15" class="line" #line>4</text>
+    <text x="60" y="15" class="line" #line>5</text>
+    <text x="60" y="15" class="line" #line>6</text>
+    <text x="60" y="15" class="line" #line>7</text>
+    <text x="60" y="15" class="line" #line>8</text>
+    <text x="60" y="15" class="line" #line>9</text>
+    <text x="60" y="15" class="line" #line>10</text>
+    <text x="60" y="15" class="line" #line>11</text>
+  </svg>
+</div>

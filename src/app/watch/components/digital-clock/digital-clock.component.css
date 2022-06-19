@@ -1,0 +1,20 @@
+.clock {
+  display: flex;
+}
+
+.horas {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: baseline;
+}
+
+span {
+  color: #383838;
+}
+
+.mishoras {
+  font-weight: bold;
+  font-size: 7rem;
+}
