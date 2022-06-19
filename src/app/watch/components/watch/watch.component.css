@@ -5,6 +5,11 @@
   fill: rgb(248, 248, 248);
 }
 
+.outer-circle,
+.center-circle {
+  fill: rgb(54, 54, 54);
+}
+
 .circle {
   aspect-ratio: 1/1;
   width: 100%;
@@ -21,7 +26,6 @@
   }
 }
 
-
 .hours, .minutes, .seconds {
   stroke-linecap: round;
   stroke-width: 2px;
@@ -29,16 +33,16 @@
 }
 
 .hours {
-  stroke: cyan;
+  stroke: rgb(54, 54, 54);
 }
 
 .minutes {
-  stroke: lime;
+  stroke: rgb(54, 54, 54);
   transition: transform 1s ease-in-out;
 }
 
 .seconds {
-  stroke: fuchsia;
+  stroke: rgb(54, 54, 54);
 }
 
 .line {

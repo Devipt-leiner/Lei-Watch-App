@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { valorReloj, XsegundoService } from '../../services/xseconds.service';
+import { clockValue, XsegundoService } from '../../services/xseconds.service';
 
 @Component({
   selector: 'app-digital-clock',
@@ -9,7 +9,7 @@ import { valorReloj, XsegundoService } from '../../services/xseconds.service';
 })
 export class DigitalClockComponent implements OnInit {
 
-  datos$!: Observable<valorReloj>;
+  datos$!: Observable<clockValue>;
   hora!: number;
   minutos!: string;
   dia!: string;
@@ -21,7 +21,7 @@ export class DigitalClockComponent implements OnInit {
   constructor(private segundo: XsegundoService) { }
 
   ngOnInit(): void {
-    this.datos$=this.segundo.getInfoReloj();
+    this.datos$=this.segundo.getInfoClock();
     this.datos$.subscribe(x => {
       this.hora = x.hora;
       this.minutos = x.minutos;

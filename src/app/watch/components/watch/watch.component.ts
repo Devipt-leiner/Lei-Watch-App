@@ -19,6 +19,7 @@ export class WatchComponent implements OnInit {
 
   // Al renderizarse el componente se calcula la zona horaria
   ngOnInit(): void {
+    this.secondsTimer();
     this.calculateTime();
     this.locateLines();
   }
@@ -26,6 +27,14 @@ export class WatchComponent implements OnInit {
   // Este método se encarga de realizar la regla de 3 para los rangos de horas, minutos y grados
   conversion(value: number, min: number, max: number, newMin: number, newMax: number) {
     return newMin + (newMax - newMin) * (value - min) / (max - min);
+  }
+
+  secondsTimer() {
+    setInterval(() => {
+      this.calculateHour();
+      this.calculateMinutes();
+      this.calculateSeconds();
+     }, 1000);
   }
 
   locateLines() {

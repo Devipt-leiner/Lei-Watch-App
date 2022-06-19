@@ -6,13 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class HeaderComponent implements OnInit {
-
-
+export class HeaderComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
